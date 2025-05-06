@@ -14,9 +14,9 @@ app.use(cookieParser());
 
 //enable cors with credentials (cookies)
 app.use(cors({
-    origin:`http://localhost:5173`,
-    credentials: true
-}))
+  origin: 'https://darling-starburst-90bec5.netlify.app', 
+  credentials: true
+}));
 app.get('/', (req, res) => {
   res.send('Backend is live!');
 });
